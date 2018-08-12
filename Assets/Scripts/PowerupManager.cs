@@ -13,16 +13,21 @@ public class PowerupManager : MonoBehaviour {
 
     private ScoreManager theScoreManager;
     private PlatformGenerator thePlatformGenerator;
+    private GameManager theGameManager;
 
     private float normalPointsPerSecond;
     private float spikeRate;
 
     private PlatformDestroyer[] spikeList;
 
+
+    
+
     // Use this for initialization
     void Start () {
         theScoreManager = FindObjectOfType<ScoreManager>();
         thePlatformGenerator = FindObjectOfType<PlatformGenerator>();
+        theGameManager = FindObjectOfType<GameManager>();
 		
 	}
 	
